@@ -1,0 +1,78 @@
+<html>
+<!--animation offloaded from css file for dynamically changing using Jquery-->
+<style>
+    span:nth-child(1) {
+        background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('test-img2.jpg');
+        animation: xfade 12s 6s infinite;
+    }
+
+    span:nth-child(2) {
+        background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('test-img1.jpg');
+        animation: xfade 12s 0s infinite;
+    }
+
+    @keyframes xfade {
+        0% {
+            opacity: 0;
+        }
+        25% {
+            opacity: 1;
+        }
+        50% {
+            opacity: 1;
+        }
+        75% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 0;
+        }
+    }
+</style>
+
+<head>
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400;300' rel='stylesheet' type='text/css'>
+    <link href='style.css' rel='stylesheet'>
+
+</head>
+
+<body>
+
+    <!-- Main body -->
+    <div class="back-box">
+        <div class="container">
+            <div class="logo-box">
+                <img class="logo" src="csbr-transparent-white.png"></img>
+            </div>
+            <div class="link-container">
+                <li>
+                    <div onclick="myFunction()" class="dropbtn" href="#">About</div>
+                    <div id="about-dropdown" class="dropdown-content">
+                        <a href="#">Meetings</a>
+                        <a href="#">Location</a>
+                        <a href="#">Link 3</a>
+                    </div>
+                </li>
+                <li>
+                    <div href="#">Dancing</div>
+                </li>
+                <li>
+                    <div href="#">Broadsword Academy</div>
+                </li>
+                <li>
+                    <div href="#">Contact</div>
+                </li>
+            </div>
+        </div>
+    </div>
+    <div class="content">
+
+    </div>
+
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <script src="app.js"></script>
+</body>
+
+</html>
